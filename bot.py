@@ -2,7 +2,7 @@ import telebot
 
 import parse
 
-TOKEN = ''
+TOKEN = '1046403625:AAG2y-Tk5OvYsVqW8PMIBC8G9EgZgDojcxQ'
 
 bot = telebot.TeleBot(TOKEN)
 

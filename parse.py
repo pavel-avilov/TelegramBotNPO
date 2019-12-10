@@ -3,7 +3,7 @@ import json
 
 data = dict()
 
-TOKEN = ''
+TOKEN = '1046403625:AAG2y-Tk5OvYsVqW8PMIBC8G9EgZgDojcxQ'
 
 def parse(INN):
     req = requests.get(f"https://api.crftr.net/v1/org/?inn={INN}&apikey={TOKEN}")
