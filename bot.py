@@ -20,12 +20,12 @@ def text_handler(message):
     text = message.text.lower()
     chat_id = message.chat.id
     if len(text) == 10 and text.isdigit():
-        parse.parse(text)
+        data = parse.parse(text)
         message_send = ''
-        if 'fail' in parse.data:
+        if 'fail' in data:
             bot.send_message(chat_id, 'Организация с таким ИНН не найдена')
         else:
-            for key, value in parse.data.items():
+            for key, value in data.items():
                 message_send += str(key) + ' - ' + str(value) + '\n'
             bot.send_message(chat_id, message_send)
     else:
