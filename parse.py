@@ -1,12 +1,11 @@
 import requests
 import json
 
+
 data = dict()
 
-TOKEN = '1046403625:AAG2y-Tk5OvYsVqW8PMIBC8G9EgZgDojcxQ'
-
 def parse(INN):
-    req = requests.get(f"https://api.crftr.net/v1/org/?inn={INN}&apikey={TOKEN}")
+    req = requests.get(f"https://api.crftr.net/v1/org/?inn={INN}&apikey=TdpRQaMA6FCccPuoIJ9y9y7Cs4CqpFNv")
     file = json.loads(req.text)
     if file['total'] ==1:
         data['Название организации'] = file['items'][0]['fullName']

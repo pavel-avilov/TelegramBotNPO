@@ -1,12 +1,9 @@
 import telebot
-
 import parse
 
 TOKEN = '1046403625:AAG2y-Tk5OvYsVqW8PMIBC8G9EgZgDojcxQ'
 
 bot = telebot.TeleBot(TOKEN)
-
-
 @bot.message_handler(commands=['start', 'go'])
 def start_handler(message):
     bot.send_message(message.chat.id,
