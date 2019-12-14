@@ -2,9 +2,12 @@ import requests
 import json
 
 
+
+
 data = dict()
 
 def parse(INN):
+    data = {}
     req = requests.get(f"https://api.crftr.net/v1/org/?inn={INN}&apikey=TdpRQaMA6FCccPuoIJ9y9y7Cs4CqpFNv")
     file = json.loads(req.text)
     if file['total'] == 1:

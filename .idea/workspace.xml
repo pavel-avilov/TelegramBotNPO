@@ -4,6 +4,7 @@
     <list default="true" id="d00ae596-d6e7-447f-a6d3-1e98a859b30e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/parse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +42,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.bot">
+  <component name="RunManager" selected="Python.fsdf">
     <configuration name="ищ1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TB" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -86,7 +87,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="df" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="fsdf" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TB" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -99,7 +100,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/df.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fsdf.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.fsdf" />
         <item itemvalue="Python.bot" />
         <item itemvalue="Python.ищ1" />
         <item itemvalue="Python.parse" />
         <item itemvalue="Python.token" />
-        <item itemvalue="Python.df" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +186,8 @@
       <workItem from="1575918423744" duration="3247000" />
       <workItem from="1575936267108" duration="2250000" />
       <workItem from="1576282150317" duration="274000" />
-      <workItem from="1576282848413" duration="4372000" />
+      <workItem from="1576282848413" duration="4646000" />
+      <workItem from="1576319654227" duration="246000" />
     </task>
     <servers />
   </component>
@@ -218,5 +220,6 @@
     <SUITE FILE_PATH="coverage/TelegramBot$parse.coverage" NAME="parse Coverage Results" MODIFIED="1576285012642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TB$ex_5.coverage" NAME="ex 5 Coverage Results" MODIFIED="1574759774535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TB$bot.coverage" NAME="bot Coverage Results" MODIFIED="1575920760486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TelegramBot$fsdf.coverage" NAME="fsdf Coverage Results" MODIFIED="1576319789808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
