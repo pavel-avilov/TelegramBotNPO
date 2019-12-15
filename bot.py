@@ -1,7 +1,7 @@
 import telebot
 import parse
+from TOK import TOKEN
 
-TOKEN = '1046403625:AAG2y-Tk5OvYsVqW8PMIBC8G9EgZgDojcxQ'
 
 bot = telebot.TeleBot(TOKEN)
 @bot.message_handler(commands=['start', 'go'])
