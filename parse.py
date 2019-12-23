@@ -4,7 +4,6 @@ import json
 
 
 
-
 def parse(INN):
     data = dict()
     req = requests.get(f"https://api.crftr.net/v1/org/?inn={INN}&apikey=TdpRQaMA6FCccPuoIJ9y9y7Cs4CqpFNv")
@@ -17,8 +16,8 @@ def parse(INN):
         data['ОГРН'] = file['items'][0]['ogrn']
         data['ИНН'] = file['items'][0]['inn']
         data['КПП'] = file['items'][0]['kpp']
-        data['Гранты'] = file['items'][0]['incomeDetail']['grants']['totalSum']
-        data['Субсидии'] = file['items'][0]['incomeDetail']['fedSubsidies']['totalSum']
+        data['Гранты'] = int(file['items'][0]['incomeDetail']['grants']['totalSum'])
+        data['Субсидии'] = int(file['items'][0]['incomeDetail']['fedSubsidies']['totalSum'])
         data['Контракты'] = int(
             file['items'][0]['incomeDetail']['contracts44']['totalSum'] + file['items'][0]['incomeDetail']['contracts94'][
                 'totalSum'] + file['items'][0]['incomeDetail']['contracts223']['totalSum'])

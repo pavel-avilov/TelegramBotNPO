@@ -2,10 +2,13 @@ import telebot
 import parse
 
 
+
+
 TOKEN = '1046403625:AAG2y-Tk5OvYsVqW8PMIBC8G9EgZgDojcxQ'
 
-
 bot = telebot.TeleBot(TOKEN)
+
+
 @bot.message_handler(commands=['start', 'go'])
 def start_handler(message):
     bot.send_message(message.chat.id,
@@ -16,6 +19,7 @@ def start_handler(message):
 def start_handler(message):
     bot.send_message(message.chat.id,
                      'Просто отправите мне ИНН интересующей Вас некомерческой организации)')
+
 
 @bot.message_handler(content_types=['text'])
 def text_handler(message):
@@ -28,7 +32,11 @@ def text_handler(message):
             bot.send_message(chat_id, 'Организация с таким ИНН не найдена')
         else:
             for key, value in data.items():
-                message_send += str(key) + ' - ' + str(value) + '\n'
+                if key == "Гранты" or key == "Субсидии" or key == "Контракты":
+                    cost = "{:,}".format(value).replace(',', ' ')
+                    message_send += str(key) + ' - ' + cost + ' рублей' + '\n'
+                else:
+                    message_send += str(key) + ' - ' + str(value) + '\n'
             bot.send_message(chat_id, message_send)
     else:
         bot.send_message(chat_id, 'Вы ввели некорректный ИНН')
