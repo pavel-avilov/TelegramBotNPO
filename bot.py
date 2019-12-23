@@ -1,10 +1,6 @@
 import telebot
 import parse
-
-
-
-
-TOKEN = '1046403625:AAG2y-Tk5OvYsVqW8PMIBC8G9EgZgDojcxQ'
+from TOK import TOKEN
 
 bot = telebot.TeleBot(TOKEN)
 
@@ -32,7 +28,7 @@ def text_handler(message):
             bot.send_message(chat_id, 'Организация с таким ИНН не найдена')
         else:
             for key, value in data.items():
-                if key == "Гранты" or key == "Субсидии" or key == "Контракты":
+                if key == "Гранты" or key == "Субсидии" or key == "Контракты" or key == "Общая сумма":
                     cost = "{:,}".format(value).replace(',', ' ')
                     message_send += str(key) + ' - ' + cost + ' рублей' + '\n'
                 else:

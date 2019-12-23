@@ -21,6 +21,7 @@ def parse(INN):
         data['Контракты'] = int(
             file['items'][0]['incomeDetail']['contracts44']['totalSum'] + file['items'][0]['incomeDetail']['contracts94'][
                 'totalSum'] + file['items'][0]['incomeDetail']['contracts223']['totalSum'])
+        data['Общая сумма'] = int(data['Гранты'])+int(data['Субсидии'])+int(data['Контракты'])
         data['Ссылка'] = 'https://openngo.ru/organization/' + file['items'][0]['ogrn']
     else:
         data['fail'] = 0
