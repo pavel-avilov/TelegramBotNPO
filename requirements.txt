@@ -1,7 +1,7 @@
 pyTelegramBotAPI==3.6.6
 requests==2.22.0
 appdirs==1.4.3
-certifi==2018.1.18
+certifi==2022.12.7
 docutils==0.13.1
 packaging==16.8
 pipenv==11.8.0
